@@ -7,3 +7,9 @@ function fetch_code_two_files() {
 }
 
 add_action('wp_enqueue_scripts', 'fetch_code_two_files');
+
+function add_codeschool_features() {
+    add_theme_support( 'title-tag' );
+}
+
+add_action( 'after_setup_theme', 'add_codeschool_features' );
